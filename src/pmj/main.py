@@ -21,8 +21,8 @@ import os
 from rich import print
 
 class CMD:
-    CREATE = 'echo jira issue create'
-    NO_INPUT = '--no-input'
+    CREATE = 'jira issue create'
+    NO_INPUT = ' --no-input'
     EXTRA = ''
 
 class FLAGS:
@@ -55,6 +55,7 @@ def main(ifile:str, dry_run:bool):
         print(commands)
     else:
         for cmd in commands:
+            print(cmd)
             os.system(cmd)
 
 def check_jira()->bool:
