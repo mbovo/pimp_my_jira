@@ -1,0 +1,21 @@
+project: DEVOPS
+component: general
+type: Task
+issues:
+  - summary: "Implement GitOps workflow with Flux"
+    body: "Set up Flux CD to automate deployment and manage infrastructure configuration stored in Git repositories"
+    component: "general" # you need at least a component for DEVOPS tickets
+    type: "Task" # "Task" "Bug" "Story"
+    parent: DEVOPS-13579
+
+  - summary: "Configure Argo CD for Kubernetes clusters"
+    body: "Install and configure Argo CD to provide continuous delivery of applications running on Kubernetes clusters"
+    component: "general" # you need at least a component for DEVOPS tickets
+    type: "Task" # "Task" "Bug" "Story"
+    parent: DEVOPS-24680
+
+  - summary: "Manage Infrastructure as Code with Terraform"
+    body: "Develop Terraform modules to provision and manage cloud resources for infrastructure deployment and configuration"
+    component: "general" # you need at least a component for DEVOPS tickets
+    type: "Task" # "Task" "Bug" "Story"
+    parent: DEVOPS-36912
